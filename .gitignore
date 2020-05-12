@@ -9,6 +9,9 @@ __pycache__/
 # PyTorch weight files
 *.pth
 
+# MAC
+.DS_Store
+
 # Distribution / packaging
 .Python
 build/

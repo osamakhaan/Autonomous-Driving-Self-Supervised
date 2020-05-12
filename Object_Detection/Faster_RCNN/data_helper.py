@@ -10,9 +10,6 @@ import torch.nn.functional as F
 import torchvision
 import torchvision.transforms as transforms
 
-#####
-#from helper import convert_map_to_lane_map, convert_map_to_road_map
-
 def convert_map_to_lane_map(ego_map, binary_lane):
     mask = (ego_map[0,:,:] == ego_map[1,:,:]) * (ego_map[1,:,:] == ego_map[2,:,:]) + (ego_map[0,:,:] == 250 / 255)
 
