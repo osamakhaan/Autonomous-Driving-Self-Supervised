@@ -30,7 +30,6 @@ def visualize(model, data_loader, device, save_dir, checkpoint_path, max_save_go
     :param checkpoint_path: weights to be loaded
     :param max_save_good: maximum number of + results to save
     :param max_save_bad: maximum number of - results to save
-    :return:
     '''
 
     pos_images_saved = 0

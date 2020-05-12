@@ -26,7 +26,6 @@ def visualize(model, validation_loader, device, save_dir, checkpoint_path):
     :param device: cpu or cuda
     :param save_dir: path to save visualizations
     :param checkpoint_path: weights to be loaded
-    :return:
     '''
     model.to(device)
 
