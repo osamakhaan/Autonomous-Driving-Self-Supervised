@@ -5,7 +5,9 @@ This is the final project for the [Deep Learning](https://atcold.github.io/pytor
 
 The goal of the project is to train a model using images captured by six different cameras attached to the same car to generate a top down view of the surrounding area. The performance of the model is evaluated by (1) the ability of detecting objects (like car, trucks, bicycles, etc.) and (2) the ability to draw the road map layout.
 
-![Overview](Images/overview.png)
+<p align="center">
+  <img src="Images/overview.png">
+</p>
  
 ## Data
 Two datasets are provided:
@@ -28,7 +30,7 @@ For the labelled dataset, two kinds of labels are provided:
 Note that the input to the model is 6 images captured from 6 different cameras positioned around the car whereas the output is a top-down view for the *entire scene*. The top-down view can be obtained by combining the binary road image with the bounding boxes of surrounding objects as shown below:
 
 <p align="center">
-  <img src="Images/top-down.png" center width="300">
+  <img src="Images/top-down.png" width="300">
 </p>
 
 
@@ -52,7 +54,10 @@ We achieved threat scores of 0.762 and
 
 The figure below shows the road segmentation pipeline:
 
-![Pipeline](Images/pipeline.png)
+<p align="center">
+  <img src="Images/pipeline.png">
+</p>
+
 
 For designing decoder architectures, we experimented with
 2 strategies. Firstly, we used up-sampling and 2D convolutions to increase the spatial representations whereas,
@@ -106,7 +111,10 @@ it can distinguish between the different camera views and
 match each camera view to a particular region of the scene
 road segmentation result.
 
-![T-SNE](Images/tsne.png)
+<p align="center">
+  <img src="Images/tsne.png">
+</p>
+
 
 ## Object Detection
 
@@ -116,9 +124,11 @@ For the object detection task, two types of architectures were tested:
 
 Faster-RCNN yielded the best results. For detailed results and analysis, please refer to the [report](report.pdf) and the [slides](slides.pdf). Here's a 3-minute overview of the project:
 
+<p align="center">
 <video width="320" height="240" controls>
   <source src="demo.mp4" type="video/mp4">
 </video>
+</p>
 
 ## Acknowledgments
 
