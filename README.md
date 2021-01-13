@@ -49,7 +49,7 @@ we calculate the threat score. The final score is a weighted average of all the 
 
 ## Results
 We achieved threat scores of 0.762 and
-0.0143 on the validation set on the road segmentation and object detection tasks respectively. Furthermore, we ranked $8^{th}$ overall on the leaderboard.
+0.0143 on the validation set on the road segmentation and object detection tasks respectively. Furthermore, we ranked 8th overall on the leaderboard.
 
 ## Road Segmentation
 
@@ -95,7 +95,7 @@ to 1000 yielded better results.
 
 *Note: Stereo has maximum permutations = 6! = 720.*
 
-| No Pretrain      | Jigsaw $(700)^{*}$ | Stereo $(700)^{*}$ | Jigsaw $(1000)^{*}$ |
+| No Pretrain      | Jigsaw (700)* | Stereo (700)* | Jigsaw (1000)* |
 | :---        |    :----:   | :----: | ----: |
 | 0.741      | 0.750       | 0.753 | 0.762 |
 
