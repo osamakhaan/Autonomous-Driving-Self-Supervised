@@ -5,7 +5,7 @@
 
 The goal of the project is to train a model using images captured by six different cameras attached to the same car to generate a top down view of the surrounding area. The performance of the model is evaluated by (1) the ability of detecting objects (like car, trucks, bicycles, etc.) and (2) the ability to draw the road map layout.
 
-![Overview](overview.png)
+![Overview](Images/overview.png)
  
 ## Data
 Two datasets are provided:
@@ -27,7 +27,7 @@ For the labelled dataset, two kind of labels are provided:
 
 Note that the input to the model is 6 images captured from 6 different cameras positioned around the car whereas the output is a top-down view for the *entire scene*. The top-down view can be obtained by combining the binary road image with the bounding boxes of surrounding objects as shown below:
 
-![Top-down View](top-down.png)
+![Top-down View](Images/top-down.png)
 
 ## Evaluation
 There are 2 evaluation metrics used; one for binary road map segmentation and one for object detection:
@@ -48,6 +48,8 @@ We achieved threat scores of 0.762 and
 ## Road Segmentation
 
 The figure below shows the road segmentation pipeline:
+
+![Pipeline](Images/pipeline.png)
 
 For designing decoder architectures, we experimented with
 2 strategies. Firstly, we used up-sampling and 2D convolutions to increase the spatial representations whereas,
@@ -100,7 +102,7 @@ roads, especially those located at the boundaries of the
 scene, as can be seen from the bottom row of the figure below. These failures can be attributed to occlusion and the
 infrequency of these types of roads in the dataset.
 
-![Visualizations](visualizations.png)
+![Visualizations](Images/visualizations.png)
 
 In order to verify our hypothesis that the stereo pretrain
 task does indeed help the network learn the different camera
@@ -111,7 +113,7 @@ it can distinguish between the different camera views and
 match each camera view to a particular region of the scene
 road segmentation result.
 
-![T-SNE](tsne.png)
+![T-SNE](Images/tsne.png)
 
 ## Object Detection
 
