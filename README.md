@@ -30,7 +30,7 @@ For the labelled dataset, two kinds of labels are provided:
 Note that the input to the model is 6 images captured from 6 different cameras positioned around the car whereas the output is a top-down view for the *entire scene*. The top-down view can be obtained by combining the binary road image with the bounding boxes of surrounding objects as shown below:
 
 <p align="center">
-  <img src="Images/top-down.png" width="300">
+  <img src="Images/top-down.png" width="400">
 </p>
 
 
