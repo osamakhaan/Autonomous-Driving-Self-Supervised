@@ -1,6 +1,6 @@
 # Autonomous-Driving-Self-Supervised
- Deep Learning Course Spring 2020 Final Project
- 
+This is the final project for the [Deep Learning](https://atcold.github.io/pytorch-Deep-Learning/) course at NYU Courant taught by Yann LeCun and Alfredo Canziani. 
+
 ## Project Goal
 
 The goal of the project is to train a model using images captured by six different cameras attached to the same car to generate a top down view of the surrounding area. The performance of the model is evaluated by (1) the ability of detecting objects (like car, trucks, bicycles, etc.) and (2) the ability to draw the road map layout.
