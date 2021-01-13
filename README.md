@@ -21,13 +21,16 @@ The dataset is organized into three levels: scene, sample and image:
 2. A sample is a snapshot of a scene at a given timeframe. Each scene is divided into 126 samples, so about 0.2 seconds between consecutive samples.
 3. Each sample contains 6 images captured by cameras facing different orientations. Each camera captures 70 degrees view. For simplicity, we assume that the angle between the cameras is 60 degrees.
 
-For the labelled dataset, two kind of labels are provided:
+For the labelled dataset, two kinds of labels are provided:
 1. The bounding boxes of surrounding objects.
 2. The binary road image.
 
 Note that the input to the model is 6 images captured from 6 different cameras positioned around the car whereas the output is a top-down view for the *entire scene*. The top-down view can be obtained by combining the binary road image with the bounding boxes of surrounding objects as shown below:
 
-![Top-down View](Images/top-down.png)
+<p align="center">
+  <img src="Images/top-down.png" center width="300">
+</p>
+
 
 ## Evaluation
 There are 2 evaluation metrics used; one for binary road map segmentation and one for object detection:
@@ -65,7 +68,7 @@ that the latter yielded better results as shown below:
 Next, we utilized self-supervised pretext tasks in order to
 pretrain the network on the unlabeled dataset. Here, we
 used 2 pretext tasks: jigsaw and our own designed pretext
-task which we call stereo. Similar to the jigsaw idea, the
+task which we call **stereo**. Similar to the jigsaw idea, the
 task is the following: given a randomly permuted sequence
 of images from the 6 cameras, the network has to predict the
 permutation. The intuition behind designing this task was
@@ -93,16 +96,6 @@ to 1000 yielded better results.
  \* represents number of permutations
 
  ### Visualizations
-
-* Strengths: The network predicts long and wide roads,
-especially those located at the center of the scene, very
-accurately as can be seen from the top row of Figure 3.
-* Weaknesses: The network struggles to predict narrow
-roads, especially those located at the boundaries of the
-scene, as can be seen from the bottom row of the figure below. These failures can be attributed to occlusion and the
-infrequency of these types of roads in the dataset.
-
-![Visualizations](Images/visualizations.png)
 
 In order to verify our hypothesis that the stereo pretrain
 task does indeed help the network learn the different camera
