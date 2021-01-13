@@ -64,9 +64,11 @@ For designing decoder architectures, we experimented with
 secondly, we used transposed convolutions. We observed
 that the latter yielded better results as shown below:
 
+<p align="center">
 | Upsampling + Convolutions      | Transposed Convolutions |
 | :---        |    ----:   |
 | 0.733      | 0.741       |
+</p>  
 
 ### Self-supervised Pretext Tasks
 
