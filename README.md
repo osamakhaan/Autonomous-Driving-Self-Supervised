@@ -122,13 +122,13 @@ For the object detection task, two types of architectures were tested:
 1. YOLOv3
 2. Faster R-CNN
 
-Faster-RCNN yielded the best results. For detailed results and analysis, please refer to the [report](report.pdf) and the [slides](slides.pdf). Here's a 3-minute overview of the project:
+Faster-RCNN yielded the best results. For detailed results and analysis, please refer to the [report](report.pdf) and the [slides](slides.pdf). Here's a 3-minute [video](demo.mp4) of the project:
 
-<p align="center">
+<!-- <p align="center">
 <video width="320" height="240" controls>
   <source src="demo.mp4" type="video/mp4">
 </video>
-</p>
+</p> -->
 
 ## Acknowledgments
 
