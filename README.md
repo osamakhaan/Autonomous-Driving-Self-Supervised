@@ -36,14 +36,15 @@ Note that the input to the model is 6 images captured from 6 different cameras p
 
 ## Evaluation
 There are 2 evaluation metrics used; one for binary road map segmentation and one for object detection:
-1. For road map segementation, we use the average threat score, which is defined as:
+1. For road map segementation, we use the average threat score, which is defined as *TS = TP/(TP+FP+FN)*.
 
-$$TS = \frac{TP}{TP+FP+FN}$$ 
+<!-- $$TS = \frac{TP}{TP+FP+FN}$$  -->
+
 
 2. For object detection, we use average mean threat score at different intersection over union (IoU) thresholds. There are five different thresholds (0.5, 0.6, 0.7, 0.8, 0.9). For each threshold,
-we calculate the threat score. The final score is a weighted average of all the threat scores:
+we calculate the threat score. The final score is a weighted average of all the threat scores.
 
-$$Object\ Detection\ Score = \sum_{t}\frac{1}{t}\frac{TP(t)}{TP(t)+FP(t)+FN(t)}$$
+<!-- $$Object\ Detection\ Score = \sum_{t}\frac{1}{t}\frac{TP(t)}{TP(t)+FP(t)+FN(t)}$$ -->
 
 
 ## Results
