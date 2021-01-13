@@ -12,6 +12,7 @@ __pycache__/
 
 # MAC
 .DS_Store
+*.pptx
 
 # Distribution / packaging
 .Python
