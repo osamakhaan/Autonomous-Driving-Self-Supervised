@@ -56,7 +56,7 @@ We achieved threat scores of 0.762 and
 The figure below shows the road segmentation pipeline:
 
 <p align="center">
-  <img src="Images/pipeline.png">
+  <img src="Images/pipeline_v2.png">
 </p>
 
 
